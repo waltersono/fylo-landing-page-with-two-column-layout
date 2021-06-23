@@ -7,132 +7,155 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="header">
-    <nav class="nav">
-      <img src="images/logo.svg" alt="Logo" class="nav__logo">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__item">Features</a></li>
-        <li class="nav__item"><a href="#" class="nav__item">Team</a></li>
-        <li class="nav__item"><a href="#" class="nav__item">Sign in</a></li>
-      </ul>
-    </nav>
+    <div class="header__container">
+      <nav class="nav">
+        <img src="images/logo.svg" alt="Logo" class="nav__logo">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+        </ul>
+      </nav>
 
-    <div class="header__content">
-      <div class="header__text-box">
-        <h1 class="h1">All your files in one secure location, accessible anywhere</h1>
-        <p class="paragraph">
-          Fylo stores your most important files in one secure location.
-          Access them wherever you need, share and collaborate with friends,
-          family, and co-workers.
-        </p>
-        <div class="header__form">
-          <input type="email" class="input" placeholder="Enter your email">
-          <button class="btn btn--primary">Get Started</button>
+      <div class="header__content">
+        <div class="header__text-box">
+          <h1 class="h1 mb-sm">All your files in one secure location, accessible anywhere</h1>
+          <p class="paragraph">
+            Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.
+          </p>
+          <div class="header__form">
+            <input type="email" class="input header__input" placeholder="Enter your email">
+            <button class="btn btn--primary">Get Started</button>
+          </div>
         </div>
+        <img src="images/illustration-1.svg" alt="People holding files" class="header__img">
       </div>
-      <img src="images/illustration-1.svg" alt="People holding files" class="header__img">
     </div>
   </header>
 
   <main class="main">
     <section class="section">
-      <div class="section_text-box">
-        <h2 class="h2">Stay productive, wherever you are</h2>
-        <p class="paragraph">
-          Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs.
-        </p>
-        <p class="paragraph">
-          Securely share files and folders with friends, family and colleagues for
-          live collaboration. No email attachments required!
-        </p>
-        <a href="#" class="btn btn--secondary">See how Fylo works</a>
-
-        <div class="comment">
-          <img src="images/icon-quotes.svg" alt="Quotes icon" class="comment__icon">
-          <p class="comment__text">
-            Fylo has improved our team productivity by an order of magnitude. Since
-            making the switch our team has become a well-oiled collaboration machine.
+      <div class="section__container">
+        <div class="section__text-box">
+          <h2 class="h2 mb-sm">Stay productive, wherever you are</h2>
+          <p class="paragraph">
+            Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.
           </p>
-          <div class="comment__info">
-            <img src="images/avatar-testimonial.jpg" alt="Person avatar" class="comment__img">
-            <div class="comment__user">
-              <div class="comment__username">Kyle Burton</div>
-              <div class="comment__user-role">Founder & CEO, Huddle</div>
+          <p class="paragraph">
+            Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!
+          </p>
+          <a href="#" class="btn btn--secondary">See how Fylo works
+            <img src="images/icon-arrow.svg" alt="Arrow icon">
+          </a>
+
+          <div class="comment mt-lg">
+            <img src="images/icon-quotes.svg" alt="Quotes icon" class="comment__icon">
+            <p class="paragraph paragraph--sm">
+              Fylo has improved our team productivity by an order of magnitude. Since
+              making the switch our team has become a well-oiled collaboration machine.
+            </p>
+            <div class="comment__info">
+              <img src="images/avatar-testimonial.jpg" alt="Person avatar" class="comment__img">
+              <div class="comment__user">
+                <div class="comment__username">Kyle Burton</div>
+                <div class="comment__role">Founder & CEO, Huddle</div>
+              </div>
             </div>
           </div>
         </div>
+        <img src="images/illustration-2.svg" alt="People sharing files" class="section__img">
       </div>
-      <img src="images/illustration-2.svg" alt="People sharing files" class="section__img">
     </section>
 
     <section class="cta">
-      <div class="cta__text-box">
-        <h3 class="h3 h3--white">Get early access today</h3>
-        <p class="paragraph paragraph--white">
-          It only takes a minute to sign up and our free starter tier is extremely generous.
-          If you have any questions, our support team would be happy to help you.
-        </p>
-      </div>
-      <div class="cta__form">
-        <input type="email" class="cta__input" placeholder="Enter your email">
-        <button class="btn">Get Started For Free</button>
+      <div class="cta__container">
+        <div class="cta__text-box">
+          <h3 class="h3 h3--white mb-sm">Get early access today</h3>
+          <p class="paragraph paragraph--white">
+            It only takes a minute to sign up and our free starter tier is extremely generous.
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
+        <div class="cta__form">
+          <input type="email" class="cta__input input shadow--1 input--error" placeholder="Enter your email">
+          <span class="input__error input__error--white mb-sm">Please check your email</span>
+          <button class="btn btn--primary shadow--1 cta__btn">Get Started For Free</button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <img src="images/logo.svg" alt="Logo" class="footer__logo">
+    <div class="footer__container">
+      <img src="images/logo-2.svg" alt="Logo" class="footer__logo">
 
-    <div class="footer__links">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <img src="images/icon-phone.svg" alt="Phone Icon">
-          <span>Phone: +1-543-123-4567</span>
-        </li>
-        <li class="footer__item">
-          <img src="images/icon-phone.svg" alt="Phone Icon">
-          <span>example@fylo.com</span>
-        </li>
-      </ul>
+      <div class="footer__links">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <img src="images/icon-phone.svg" alt="Phone Icon">
+            <span>Phone: +1-543-123-4567</span>
+          </li>
+          <li class="footer__item">
+            <img src="images/icon-email.svg" alt="Phone Icon">
+            <span>example@fylo.com</span>
+          </li>
+        </ul>
 
-      <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Jobs</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
-      </ul>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Jobs</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+        </ul>
 
-      <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-      </ul>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+        </ul>
 
-      <ul class="footer__list  footer__list--hr">
-        <li class="footer__item"><a href="#" class="footer__link">
-            <img src="images/icon-phone.svg" alt="Facebook">
-          </a>
-        </li>
-        <li class="footer__item"><a href="#" class="footer__link">
-            <img src="images/icon-phone.svg" alt="Facebook">
-          </a>
-        </li>
-        <li class="footer__item"><a href="#" class="footer__link">
-            <img src="images/icon-phone.svg" alt="Facebook">
-          </a>
-        </li>
-      </ul>
+        <ul class="footer__list  footer__list--hr">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg>
+                <use xlink:href="icons/sprites.svg#icon-facebook-with-circle"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg>
+                <use xlink:href="icons/sprites.svg#icon-twitter-with-circle"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <svg>
+                <use xlink:href="icons/sprites.svg#icon-instagram-with-circle"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
     </div>
-
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
 
   </footer>
 </body>
