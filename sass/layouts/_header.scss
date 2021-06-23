@@ -1,0 +1,65 @@
+.header {
+    padding: 5rem 0 15rem 0;
+    &__container {
+        @include container;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20rem;
+    }
+
+    &__text-box {
+        width: 40%;
+        animation: moveInLeft 1s ease-out 0.2s;
+        animation-fill-mode: backwards;
+    }
+
+    &__img {
+        width: 50%;
+        animation: moveInRight 1s ease-out 0.2s;
+        animation-fill-mode: backwards;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input {
+        flex: 1;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        &__content {
+            flex-direction: column;
+            text-align: center;
+            width: 60%;
+            margin: 5rem auto;
+        }
+
+        &__text-box {
+            order: 2;
+            width: 100%;
+        }
+
+        &__img {
+            order: 1;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &__form {
+            flex-direction: column;
+        }
+
+        &__input {
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}

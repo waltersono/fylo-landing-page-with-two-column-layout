@@ -1,0 +1,35 @@
+.h1 {
+    color: $color-primary-1;
+    font-family: $font-accent, sans-serif;
+}
+
+.h2 {
+    color: $color-primary-1;
+    font-family: $font-accent, sans-serif;
+    font-size: 3.4rem;
+}
+
+.h3 {
+    font-family: $font-accent, sans-serif;
+    font-size: 3rem;
+
+    &--white {
+        color: #fff;
+    }
+}
+
+.paragraph {
+    color: $color-primary-1;
+
+    &--sm {
+        font-size: 1.5rem;
+    }
+
+    &--white {
+        color: $color-neutral-1;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}

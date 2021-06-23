@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: $font-accent, sans-serif;
+
+    &__logo {
+        margin-right: auto;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__item {
+        margin-left: 4rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-primary-1;
+    }
+
+    &__link:hover,
+    &__link:active {
+        text-decoration: underline;
+    }
+}
